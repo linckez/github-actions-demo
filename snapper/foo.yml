@@ -1,0 +1,13 @@
+name: Prerelease iOS
+description: Prerelease iOS Application
+
+inputs:
+  my_input:
+    description: Some Token
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - runs: |
+        echo "Version: ${{ inputs.my_input }}"
